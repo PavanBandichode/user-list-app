@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*custom styles*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+body {
+  line-height: 1.5;
+  font-family: "Roboto", Tahoma, sans-serif;
+}
+img {
+  width: 50px;
+  object-fit: cover;
+}
+.container,
+header {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/*all flex properties*/
+.flex {
+  display: flex;
+}
+.flex-30 {
+  flex: 0 1 20%;
+}
+.flex-40 {
+  flex: 0 1 40%;
+  background-color: #f38181;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-60 {
+  flex: 0 1 80%;
+}
+.space-between {
+  justify-content: space-between;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+/*header*/
+header {
+  border-bottom: 1px solid rgb(246, 216, 216);
+  padding: 0.4rem;
+  margin-top: 1rem;
+}
+h1,
+span,
+p {
+  padding: 0.8rem 0.4rem;
+}
+h1 {
+  margin-left: 0.8rem;
+  border-left: 1px solid rgb(246, 216, 216);
+}
+.user-icon {
+  border-radius: 50%;
+  border: 1px solid rgb(246, 216, 216);
+}
+/*aside*/
+.nav-bar {
+  height: 80vh;
+  border-right: 1px solid rgb(246, 216, 216);
+}
+li {
+  color: #5c5c5c;
+  padding: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.active {
+  color: black;
+  background-color: #2ac273;
+}
+/*table*/
+table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  color: #5c5c5c;
+}
+thead {
+  background-color: #d8d8d8;
+}
+th,
+td {
+  border: 1px solid #b4abab;
+  text-align: left;
+  padding: 12px;
+}
+.fa-trash {
+  background-color: #2ac273;
+}
+.btn {
+  margin-left: 3rem;
+  background-color: #2ac273;
+  padding: 0.4rem 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+}
+.flex-50 header {
+  font-size: 1.4rem;
+}
+.form-container {
+  position: absolute;
+  width: 700px;
+  top: 30%;
+  left: 30%;
+  box-shadow: 2px 3px 3px 2px rgb(34, 32, 32);
+  background-color: white;
+}
+
+.edit-form {
+  width: 500px;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.fa-user-plus {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  margin-left: 6rem;
+  margin-top: 1rem;
+}
+label,
+select,
+.input {
+  display: block;
+}
+label {
+  margin: 1rem 0;
+}
+.input {
+  width: 70%;
+  padding: 0.4rem;
+}
+select {
+  width: 40%;
+  padding: 0.4rem;
+}
+.cancel {
+  background-color: #ffbb41;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+.add {
+  background-color: #2ac273;
+  color: #ffff;
+  padding: 0.4rem 1.2rem;
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.buttons {
+  margin-top: 3rem;
+  margin-right: 0;
+}
